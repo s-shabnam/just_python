@@ -1,3 +1,3 @@
 # Python-Exercices
 
-In this repository you'll find codes in Python
+In this repository you'll find codes in Python 2
