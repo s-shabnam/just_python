@@ -14,11 +14,10 @@ except:
 
 #Calculate
 extraHours = hours - baseHours
-basePay = baseHours*payRate
 
 if extraHours <= 0 :
-	totalPay = basePay
+	totalPay = hours*payRate
 else :
-	totalPay = basePay + extraPayCoefficient*extraHours*payRate
+	totalPay = baseHours*payRate + extraPayCoefficient*extraHours*payRate
 
 print totalPay
