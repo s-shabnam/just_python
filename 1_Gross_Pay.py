@@ -5,15 +5,20 @@ baseHours =35.0
 extraPayCoefficient = 2.0
 
 #Input data
-hours = float(raw_input("Enter Hours please:"))
-payRate = float(raw_input("Enter Pay Rate please:"))
+try :
+	hours = float(raw_input("Enter worked hours please:"))
+	payRate = float(raw_input("Enter pay rate to use please:"))
+except:
+	print "Please enter valid data"
+	quit()
 
+#Calculate
 extraHours = hours - baseHours
 basePay = baseHours*payRate
 
 if extraHours <= 0 :
 	totalPay = basePay
 else :
-    totalPay = basePay + extraPayCoefficient*extraHours*payRate
-    
+	totalPay = basePay + extraPayCoefficient*extraHours*payRate
+
 print totalPay
