@@ -12,11 +12,12 @@ while True:
     try:
         num = int(num)
         if smallest is None : smallest = num
-        if num < smallest : smallest = num
+        elif num < smallest : smallest = num
         if largest is None : largest = num 
-        if num > largest : largest = num
+        elif num > largest : largest = num
     except:
-        print "Enter valid input , integer number or done to exit"
- 
+        print "Invalid input"
+        continue
+    
 print "Maximum is", largest
-print "Minimum is", smalles
+print "Minimum is", smallest
