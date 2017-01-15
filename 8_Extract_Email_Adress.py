@@ -10,7 +10,7 @@ emailList = list()
 count = 0
 lineList = list(file)
 for line in lineList:
-    if line.startswith('From'):
+    if line.startswith('From '):
         lineWords = line.split()
         email = lineWords[1]
         if email not in emailList:
